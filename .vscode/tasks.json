@@ -1,0 +1,26 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "testing inbox 496075",
+            "type": "shell",
+            "command": "python3",
+            "args": [
+                "mailtrap_handler/testing.py"
+            ],
+            "options": {
+                "env": {
+                    "token": "da7f4cbe1b3c651781d2f1d3e67a36be",
+                    "inbox": "224157"
+                }
+            },
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}
